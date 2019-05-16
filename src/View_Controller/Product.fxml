@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ProductController">
+   <children>
+      <Label fx:id="AddorModifyTitle" layoutX="25.0" layoutY="25.0" text="Add Product" textFill="#062b8f" translateY="70.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="70.0" text="ID" translateY="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="100.0" text="Name" translateY="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="130.0" text="Inv" translateY="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="160.0" text="Price/Cost" translateY="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="190.0" text="Max" translateY="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="190.0" text="Min" translateY="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="prodID" layoutX="136.0" layoutY="68.0" translateY="70.0" />
+      <TextField fx:id="prodName" layoutX="136.0" layoutY="98.0" translateY="70.0" />
+      <TextField fx:id="prodInv" layoutX="136.0" layoutY="128.0" translateY="70.0" />
+      <TextField fx:id="prodPrice" layoutX="136.0" layoutY="158.0" translateY="70.0" />
+      <TextField fx:id="prodMax" layoutX="86.0" layoutY="188.0" prefHeight="25.0" prefWidth="100.0" translateY="70.0" />
+      <TextField fx:id="prodMin" layoutX="247.0" layoutY="188.0" prefHeight="25.0" prefWidth="100.0" translateY="70.0" />
+      <Button fx:id="cancel" layoutX="723.0" layoutY="391.0" mnemonicParsing="false" text="Cancel" translateY="70.0" />
+      <Button fx:id="save" layoutX="656.0" layoutY="391.0" mnemonicParsing="false" text="Save" translateY="70.0" />
+      <Button fx:id="search" layoutX="400.0" layoutY="35.0" mnemonicParsing="false" text="Search" />
+      <TextField fx:id="prodSearch" layoutX="470.0" layoutY="35.0" />
+      <TableView fx:id="searchProductTable" layoutX="400.0" layoutY="70.0" prefHeight="150.0" prefWidth="375.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TableView fx:id="dataProductTable" layoutX="400.0" layoutY="279.0" prefHeight="150.0" prefWidth="375.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Button fx:id="delete" layoutX="723.0" layoutY="429.0" mnemonicParsing="false" text="Delete" />
+      <Button fx:id="add" layoutX="723.0" layoutY="228.0" mnemonicParsing="false" text="Add" />
+   </children>
+</AnchorPane>
